@@ -4,9 +4,9 @@ class server(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
     server_type = models.CharField(max_length=100)
-    processor_numb = (max_length=100)
-    memory_capacity = (max_length=100)
-    storage_capacity = (max_length=100)
+    processor_numb = models.CharField(max_length=100)
+    memory_capacity = models.CharField(max_length=100)
+    storage_capacity = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
@@ -48,4 +48,5 @@ class applications (models.Model):
 
     def __str__(self):
         return self.name
-# Create your models here.
+
+
