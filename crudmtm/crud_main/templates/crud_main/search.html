@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+{% if searched %}
+
+<div class="search-title" >
+                <h2>tu cherches pour le mot: {{ searched }}</h2>
+</div>
+</br>
+
+<div class="article-table">
+    <table class="table table-light table-striped table-bordered">
+      <thead>
+        <tr class="table-dark">
+          <th class="table-top" scope="col">Name</th>
+          <th class="table-top" scope="col">Server Type</th>
+          <th class="table-top" scope="col">Processor Number</th>
+          <th class="table-top" scope="col">Memory Capacity</th>
+          <th class="table-top" scope="col">Storage Capacity</th>
+          <th class="table-top text-end" scope="col"></th>
+        </tr>
+      </thead>
+
+      {% for server in server %}
+      <tr>
+        <td class="table-bot">{{ server.name}}</a></td>
+        <td class="table-bot">{{ server.type_of_server }}</td>
+        <td class="table-bot">{{ server.processor_number }}</td>
+        <td class="table-bot">{{ server.memory_capacity }}</td>
+        <td class="table-bot">{{ server.storage_capacity }}</td>
+        <td class="table-top text-end">
+          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <a href="update_server" type="button" class="btn btn-outline-primary btn-sm"> Update </a>
+            <a href="delete_server" type="button" class="btn btn-danger btn-sm"> Delete </a>
+          </div>
+        </td>
+      </tr>
+    </table>
+</div>
+        {% endfor %}
+
+        {% else %}
+            <section class="search-title-2">
+                <h2> You forgot to search a Server</h2>
+            </section>
+        {% endif %}
+{% endblock %}

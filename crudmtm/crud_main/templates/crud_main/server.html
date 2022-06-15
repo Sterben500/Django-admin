@@ -1,0 +1,11 @@
+{%extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+   <div class="lol">
+    {% crispy form%}
+        <p><a href="type_of_server">Create Type Of Server</a></p>
+        <button type="submit" class="btn btn-success">Add Server</button>
+    </div>
+    
+{% endblock %}
