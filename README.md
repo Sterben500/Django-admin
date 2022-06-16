@@ -5,12 +5,18 @@
 <table/>
 <h2>📊 development breakdown: </h2>
 
-  ```text
-  Python         3 hrs 50 mins       ██████░░░░     65.49%
-  Kaggle         1 hr 53 mins        ███░░░░░░░     32.13%
-  JSON           6 mins              ░░░░░░░░░░     1.95%
+  ```css
+  DJANGO         22 hrs 11 mins       ██████░░░░     65.49%
+  SQL            2 hr 53 mins         ███░░░░░░░     32.13%
+  HTML           2 hr 10 mins         ░░░░░░░░░░     1.95%
   ```
-<h2>📝 images<h2>
+  <h2>👉 current to finish</h2>
+  * CSS integration to html
+  * Online application
+  * VM setup 
+  * error corrections
+  
+  <h2>📝 images<h2>
 
 ![alt text](https://astra.icu/saepng.png)
 <hr>
