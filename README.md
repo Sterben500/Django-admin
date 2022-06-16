@@ -1,7 +1,7 @@
 # Django-admin
 <hr>
 <table>
-<h6>The project had alots of phases, the first phase involved understanding and implementing a django framework that would store all data in a database and provide a web interface for users to input their data. <h6>
+<h5>The project had alots of phases, the first phase involved understanding and implementing a django framework that would store all data in a database and provide a web interface for users to input their data. <h5>
 <table/>
 <h2>📊 development breakdown: </h2>
 
