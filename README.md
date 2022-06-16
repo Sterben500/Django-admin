@@ -5,7 +5,7 @@
 <table/>
 <h2>📊 development breakdown: </h2>
 
-  ```css
+  ```text
   Python         3 hrs 50 mins       ██████░░░░     65.49%
   Kaggle         1 hr 53 mins        ███░░░░░░░     32.13%
   JSON           6 mins              ░░░░░░░░░░     1.95%
