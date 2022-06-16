@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data View</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+
+        </tr>
+        <tr>
+            <td>Server Data</td>
+            {% for data in server %}
+
+            <td>
+                <p>{{data}}</p>
+            </td>
+            <td><a href="{% url 'crud_main:update_server' data.server_id %}">Edit</a></td>
+            <td><a href="{% url 'crud_main:delete_server' data.server_id %}">Delete</a></td>
+
+            {% endfor %}
+        </tr>
+        <tr>
+            <td>Type of Server Data</td>
+
+            {% for data in type_of_server %}
+
+            <td>
+                <p>{{data}}</p>
+            </td>
+            <td><a href="{% url 'crud_main:update_type_of_server' data.type_server_id %}">Edit</a></td>
+            <td><a href="{% url 'crud_main:delete_type_of_server' data.type_server_id %}">Delete</a></td>
+
+            {% endfor %}
+        </tr>
+        <tr>
+            <td>Users Data</td>
+            {% for data in users %}
+
+            <td>
+                <p>{{data}}</p>
+            </td>
+            <td><a href="{% url 'crud_main:update_users' data.user_id %}">Edit</a></td>
+            <td><a href="{% url 'crud_main:delete_users' data.user_id %}">Delete</a></td>
+
+            {% endfor %}
+        </tr>
+        <tr>
+            <td>Services Data</td>
+            {% for data in servers %}
+
+            <td>
+                <p>{{data}}</p>
+            </td>
+            <td><a href="{% url 'crud_main:update_servers' data.service_id %}">Edit</a></td>
+            <td><a href="{% url 'crud_main:delete_servers' data.service_id %}">Delete</a></td>
+
+            {% endfor %}
+        </tr>
+
+        <tr>
+            <td>Applications Has Services</td>
+            {% for data in applicationshasservices %}
+
+            <td>
+                <p>{{data}}</p>
+            </td>
+            <td><a href="{% url 'crud_main:update_app_has_services' data.app_id %}">Edit</a></td>
+            <td><a href="{% url 'crud_main:delete_app_has_services' data.app_id %}">Delete</a></td>
+
+            {% endfor %}
+        </tr>
+
+
+
+        <tr>
+            <td>Applications Data</td>
+            {% for data in applications %}
+
+            <td>
+                <p>{{data}}</p>
+            </td>
+            <td><a href="{% url 'crud_main:update_applications' data.app_id %}">Edit</a></td>
+            <td><a href="{% url 'crud_main:delete_applications' data.app_id %}">Delete</a></td>
+
+            {% endfor %}
+        </tr>
+        <tr>
+            <td>Overall Data</td>
+            {% for data in overall %}
+
+            <td>
+                <p>{{data}}</p>
+            </td>
+            <td><a href="{% url 'crud_main:update_overall' data.id %}">Edit</a></td>
+            <td><a href="{% url 'crud_main:delete_overall' data.id %}">Delete</a></td>
+
+            {% endfor %}
+        </tr>
+    </table>
+<p><a href="{% url 'crud_main:create_server' %}">Create Server</a></p>
+<p><a href="{% url 'crud_main:type_of_server' %}">Create Type Of Server</a></p>
+<p><a href="{% url 'crud_main:users' %}">Create User</a></p>
+<p><a href="{% url 'crud_main:servers' %}">Create Services</a></p>
+<p><a href="{% url 'crud_main:apphasservices' %}">Create Application Has Services</a></p>
+<p><a href="{% url 'crud_main:applications' %}">Create Applications</a></p>
+<p><a href="{% url 'crud_main:overall' %}">Create Overall</a></p>
+
+</body>
+
+</html>
