@@ -11,10 +11,10 @@
   HTML           2 hr 10 mins         ░░░░░░░░░░     1.95%
   ```
   <h2>👉 current to finish</h2>
-  * CSS integration to html
-  * Online application
-  * VM setup 
-  * error corrections
+  * CSS integration to html <br />
+  * Online application <br />
+  * VM setup  <br />
+  * error corrections <br />
   
   <h2>📝 images<h2>
 
