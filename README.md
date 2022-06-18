@@ -19,7 +19,7 @@
   <h2>📝 images</h2>
 ![alt text](https://astra.icu/saepng.png)
   ![alt text](https://astra.icu/sae2.png)
-  ![alt text](https://astra.icu/gantt.png)
+
   <h2>🦿Prototypes</h2>
   
   ![alt text](https://cdn.discordapp.com/attachments/984009687483703317/984385440377372733/IMG_0135.jpg)
